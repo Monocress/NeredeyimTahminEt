@@ -1,0 +1,27 @@
+server:
+  port: 7073
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: doruk
+    password: 123
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/Java9TahminDB
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+jwt:
+  # Kullanım kolaylığı için şifreler açıkca verilmiştir.
+  #  secretKey: ${java9secretkey}
+  #  issuer: ${java9issuer}
+  #  audience: ${java9audience}
+  secretKey: java9Marathon4
+  issuer: dorukjava9
+  audience: java9
